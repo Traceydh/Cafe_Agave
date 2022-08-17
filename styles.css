@@ -84,6 +84,7 @@ h2 {
     grid-template-columns: 5fr 1fr 1fr;
     gap: 2rem;
     justify-content: start;
+    padding-bottom: 0.5rem;
 }
 
 
