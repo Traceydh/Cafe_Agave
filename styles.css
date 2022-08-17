@@ -24,7 +24,7 @@ header {
     background-image: url(coffeebackground.jpg);
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: 100vh;
 
     display: flex;
     justify-content: center;
