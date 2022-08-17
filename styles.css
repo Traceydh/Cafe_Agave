@@ -67,6 +67,7 @@ header {
 .menu {
     width: 100%;
     background: var(--cream);
+    padding: var(--padding);
 
     display: flex;
     flex-direction: column;
@@ -80,14 +81,11 @@ h2 {
 }
 .menu-item {
     display: grid;
-    grid-template-columns: 6fr 1fr 1fr;
+    grid-template-columns: 5fr 1fr 1fr;
     gap: 2rem;
     justify-content: start;
 }
 
-.menu-item div {
-    justify-self: start;
-}
 
 .prices {
     display: flex;
