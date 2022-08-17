@@ -81,12 +81,15 @@ h2 {
 }
 .menu-item {
     display: grid;
-    grid-template-columns: 5fr 1fr 1fr;
+    grid-template-columns: 5fr 1fr;
     gap: 2rem;
     justify-content: start;
     padding-bottom: 0.5rem;
 }
 
+.menu-item div {
+    align-self: center;
+}
 
 .prices {
     display: flex;
