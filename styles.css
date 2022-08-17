@@ -20,25 +20,20 @@ html {
 
 header {
     background-color: var(--darkBrown);
-    background-image: url("coffeebackground.png");
+    background-image: url(coffeebackground.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
-.background {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 20rem;
-    margin-top: var(--padding);
-    margin-left: var(--padding);
- }
-
 .logo {
     height: 20rem;
     width: auto;
-    padding-right: var(-padding);
 }
 
+.logo-container {
+    position: relative;
+}
 
  ul {
     list-style: none;
@@ -53,6 +48,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 20%;
  }
 
  /*should be 1200*/
