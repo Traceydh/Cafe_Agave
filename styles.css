@@ -3,29 +3,40 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 :root {
     --darkBrown: #AD8B73;
     --lightBrown: #E3CAA5; 
     --pinkBrown: #CEAB93;
     --cream: #FFFBE9;
     --red: #D1512D;
-}
-
-html {
-    font-size: 62.5%;
+    --padding: 20rem;
 }
 
 /*Header Section */
 
 header {
     background-color: var(--darkBrown);
-    padding: 0 3rem;
+    background-image: url("coffeebackground.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
+
+.background {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5rem;
+ }
 
 .logo {
     height: 20rem;
     width: auto;
+    padding-right: var(-padding);
 }
+
 
  ul {
     list-style: none;
@@ -33,6 +44,8 @@ header {
     font-size: 2rem;
     display: none;
     color: var(--cream);
+    padding-left: var(--padding);
+    padding-left: 2rem;
  }
  
  nav {
