@@ -13,7 +13,7 @@ html {
     --pinkBrown: #CEAB93;
     --cream: #FFFBE9;
     --red: #D1512D;
-    --padding: 20rem;
+    --padding: 2rem;
 }
 
 /*Header Section */
@@ -27,8 +27,10 @@ header {
 }
 
 .background {
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20rem;
+    margin-top: var(--padding);
+    margin-left: var(--padding);
  }
 
 .logo {
@@ -44,8 +46,7 @@ header {
     font-size: 2rem;
     display: none;
     color: var(--cream);
-    padding-left: var(--padding);
-    padding-left: 2rem;
+    margin-right: var(--padding);
  }
  
  nav {
