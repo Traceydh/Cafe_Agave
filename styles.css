@@ -110,6 +110,15 @@ hr {
     margin-right: auto;
 }
 
+/*Contact */
+.contact {
+    height: 100vh;
+}
+
+.map {
+    height: 50rem;
+}
+
  /*should be 1200*/
  @media screen 
  and (min-device-width: 800px) 
