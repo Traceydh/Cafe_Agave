@@ -11,3 +11,11 @@
     --red: #D1512D;
 }
 
+header {
+    background-color: var(--darkBrown);
+}
+
+.logo {
+    height: 12rem;
+    width: auto;
+}
