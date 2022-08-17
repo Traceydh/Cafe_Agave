@@ -1,0 +1,13 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkBrown: #AD8B73;
+    --lightBrown: #E3CAA5; 
+    --pinkBrown: #CEAB93;
+    --cream: #FFFBE9;
+    --red: #D1512D;
+}
+
