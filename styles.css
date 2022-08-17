@@ -11,11 +11,47 @@
     --red: #D1512D;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+/*Header Section */
+
 header {
     background-color: var(--darkBrown);
+    padding: 0 3rem;
 }
 
 .logo {
-    height: 12rem;
+    height: 20rem;
     width: auto;
+}
+
+ ul {
+    list-style: none;
+    gap: 3rem;
+    font-size: 2rem;
+    display: none;
+    color: var(--cream);
+ }
+ 
+ nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ /*should be 1200*/
+ @media screen 
+ and (min-device-width: 800px) 
+ and (max-device-width: 1600px) 
+ and (-webkit-min-device-pixel-ratio: 1) { 
+    /*header*/
+    ul {
+        display: flex;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
 }
