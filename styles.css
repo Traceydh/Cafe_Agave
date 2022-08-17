@@ -64,10 +64,17 @@ header {
 
 
 /*Menu Section */
+.menu {
+    padding: 0 var(--padding);
+}
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
 .menu-item {
-    display: flex;
-    justify-content: space-around;
-    align-items: end;
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr;
+    justify-content: start;
 }
 
 .prices {
