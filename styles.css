@@ -65,21 +65,47 @@ header {
 
 /*Menu Section */
 .menu {
-    padding: 0 var(--padding);
+    width: 100%;
+    background: var(--cream);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 h2 {
     text-align: center;
     font-size: 2.5rem;
+    margin-top: 0;
 }
 .menu-item {
     display: grid;
     grid-template-columns: 6fr 1fr 1fr;
+    gap: 2rem;
     justify-content: start;
+}
+
+.menu-item div {
+    justify-self: start;
 }
 
 .prices {
     display: flex;
     gap: 1rem;
+}
+
+hr {
+    height: 2px;
+    background-color: var(--darkBrown);
+    border-color: var(--darkBrown);
+}
+
+.small-image {
+    height: 6rem;
+    display: block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
  /*should be 1200*/
