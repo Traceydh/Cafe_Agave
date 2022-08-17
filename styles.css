@@ -113,10 +113,21 @@ hr {
 /*Contact */
 .contact {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .map {
-    height: 50rem;
+    height: 30rem;
+    width: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
  /*should be 1200*/
