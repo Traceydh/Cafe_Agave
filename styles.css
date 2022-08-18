@@ -70,7 +70,6 @@ body {
     position: absolute;
     height: 100%;
     width: 100vw;
-    font-size: 3rem;
 
     display: flex;
     align-items: start;
@@ -81,7 +80,6 @@ body {
  ul {
     width: 80%;
     list-style: none;
-    font-size: 2rem;
     padding: 0;
 
     display: flex;
@@ -90,6 +88,10 @@ body {
 
     padding-left: var(--padding);
  }
+
+li, li a {
+    font-size: 2rem;
+}
 
  .link {
     background-color: transparent;
@@ -116,7 +118,7 @@ body {
     padding: 0.75rem;
     border-radius: 0.2rem;
     box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.5);
-    line-height: 2.5rem;
+    line-height: 3rem;
 
     /*Animate*/
     opacity: 0;
@@ -287,6 +289,7 @@ footer p {
  and (min-device-width: 800px) 
  and (max-device-width: 1600px) 
  and (-webkit-min-device-pixel-ratio: 1) { 
-    /*Navigation*/
-    .dropdown:hover .dropdown-content {display: block;}
+    nav {
+        font-size: 10rem;
+    }
 }
