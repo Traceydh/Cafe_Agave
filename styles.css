@@ -215,11 +215,6 @@ h2 {
     gap: 3rem;
 }
 
-.map-image {
-    height: 25rem;
-    width: 25rem;
-}
-
 .contact h2, .contact button, .color p, .color h3 {
     color: var(--cream);
 }
@@ -235,8 +230,10 @@ form {
 input, textarea {
     height: 3.5rem;
     width: 80%;
+    max-width: 50rem;
     border-radius: 0.2rem;
     border: none;
+
 }
 
 textarea {
@@ -258,7 +255,10 @@ button:active {
     color: var(--cream);
 }
 
-.map-container img {
+
+.map-image {
+    height: 25rem;
+    width: 25rem;
     border-radius: 0.2rem;
 }
 
@@ -292,7 +292,5 @@ footer p {
 
  /*should be 1200*/
 @media (min-device-width: 800px) {
-    .menu-item {
-        max-width: 50rem;
-    }
+    
 }
