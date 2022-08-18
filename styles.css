@@ -83,7 +83,8 @@ body {
     padding: 0;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20%;
     align-items: center;
 
     padding-left: var(--padding);
@@ -285,11 +286,9 @@ footer p {
 }
 
  /*should be 1200*/
- @media screen 
- and (min-device-width: 800px) 
- and (max-device-width: 1600px) 
- and (-webkit-min-device-pixel-ratio: 1) { 
-    nav {
-        font-size: 10rem;
+@media (min-device-width: 800px) {
+    ul {
+        justify-content: center;
+        gap: 20%;
     }
 }
