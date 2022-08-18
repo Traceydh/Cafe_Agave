@@ -227,6 +227,8 @@ form {
 input, textarea {
     height: 3.5rem;
     width: 80%;
+    border-radius: 0.2rem;
+    border: none;
 }
 
 textarea {
@@ -246,6 +248,10 @@ button:active {
 
 .map-container p {
     color: var(--cream);
+}
+
+.map-container img {
+    border-radius: 0.2rem;
 }
 
 .phone {
