@@ -175,7 +175,7 @@ h2 {
     width: 25rem;
 }
 
-.contact * {
+.contact h2, .contact button {
     color: var(--cream);
 }
 
