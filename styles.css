@@ -41,18 +41,6 @@ header * {
     width: auto;
 }
 
- ul {
-    list-style: none;
-    font-size: 2rem;
-    padding: 0;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 50%;
-
-    padding-left: var(--padding);
- }
  /*Navigation section*/
  nav {  
     position: absolute;
@@ -62,6 +50,19 @@ header * {
     display: flex;
     align-items: start;
     justify-content: center;
+ }
+
+ ul {
+    width: 80%;
+    list-style: none;
+    font-size: 2rem;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-left: var(--padding);
  }
 
  .drop-button {
@@ -86,7 +87,7 @@ header * {
 
 .dropdown-content a:hover {background-color: #ddd;}
 
-.dropdown:active .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block;}
 
 /*Menu Section */
 .menu {
@@ -189,5 +190,6 @@ button:active {
  and (min-device-width: 800px) 
  and (max-device-width: 1600px) 
  and (-webkit-min-device-pixel-ratio: 1) { 
-
+    /*Navigation*/
+    .dropdown:hover .dropdown-content {display: block;}
 }
