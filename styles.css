@@ -66,7 +66,7 @@ header * {
     padding-left: var(--padding);
  }
 
- .drop-button {
+ .link {
     background-color: transparent;
  }
 
@@ -74,17 +74,21 @@ header * {
     position: relative;
  }
 
- .dropdown-content {
+ .dropdown-menu {
     position: absolute;
     min-width: 12rem;
     left: -0.8rem; 
-    top: calc(100%);
+    top: 100%;
     background-color: var(--cream);
     padding: 0.75rem;
     border-radius: 0.5rem;
     box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.5);
+
+    /*Animate*/
     opacity: 0;
-    transition: opacity 150ms ease-in-out;
+    pointer-events: none;
+    transform: translateY(-1.5rem);
+    transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;;
  }
 
  a {
@@ -92,12 +96,14 @@ header * {
     text-decoration: none;
  }
 
-.dropdown-content.active {
-    opacity: 1;
-}
+ a:focus {
+    color: var(--darkBrown)
+ }
 
-.dropdown > .drop-button:focus + .dropdown-content {
+.dropdown.active > .link + .dropdown-menu {
+    pointer-events: auto;
     opacity: 1;
+    transform: translateY(0px);
 }
 
 /*Menu Section */
