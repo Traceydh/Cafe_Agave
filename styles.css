@@ -242,6 +242,14 @@ button:active {
     align-items: center;
 }
 
+.phone a {
+    color: var(--cream);
+}
+
+.phone a:visited {
+    color: var(--cream);
+}
+
 .extra-small-image {
     height: 2rem;
     width: auto;
