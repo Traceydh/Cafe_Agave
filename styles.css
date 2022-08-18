@@ -108,6 +108,7 @@ h2 {
     background-position: center;
 
     text-align: center;
+    padding: 0 var(--padding);
 
     height: 100vh;
     display: flex;
@@ -116,13 +117,13 @@ h2 {
     gap: 3rem;
 }
 
-.contact * {
-    color: var(--cream);
-}
-
 .map-image {
     height: 25rem;
     width: 25rem;
+}
+
+.color * {
+    color: var(--cream);
 }
 
 form {
@@ -130,6 +131,27 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+}
+
+input, textarea {
+    height: 3.5rem;
+    width: 80%;
+}
+
+textarea {
+    height: 10rem;
+}
+
+button {
+    background-color: var(--lightBrown);
+    border: none;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+}
+
+button:active {
+    opacity: 80%;
 }
 
  /*should be 1200*/
