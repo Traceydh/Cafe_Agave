@@ -3,7 +3,7 @@ html {
 }
 
 :root {
-    --darkBrown: #AD8B73;
+    --darkBrown: #61481C;
     --lightBrown: #E3CAA5; 
     --pinkBrown: #CEAB93;
     --cream: #FFFBE9;
@@ -60,9 +60,6 @@ header {
     justify-content: center;
  }
 
-/*About Us Section */
-
-
 /*Menu Section */
 .menu {
     width: 100%;
@@ -84,7 +81,7 @@ h2 {
     grid-template-columns: 5fr 1fr;
     gap: 2rem;
     justify-content: start;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .menu-item div {
@@ -94,12 +91,6 @@ h2 {
 .prices {
     display: flex;
     gap: 1rem;
-}
-
-hr {
-    height: 2px;
-    background-color: var(--darkBrown);
-    border-color: var(--darkBrown);
 }
 
 .small-image {
@@ -112,15 +103,24 @@ hr {
 
 /*Contact */
 .contact {
+    background-image: url(location.jpg);
+    background-size: cover;
+    background-position: center;
+
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: 3rem;
 }
 
+.contact * {
+    color: var(--cream);
+}
+
 .map {
-    height: 40rem;
-    width: 40rem;
+    height: 25rem;
+    width: 25rem;
 }
 
 form {
