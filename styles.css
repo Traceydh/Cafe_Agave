@@ -206,6 +206,22 @@ button:active {
     opacity: 80%;
 }
 
+
+/*Footer*/
+footer {
+    background: var(--lightBrown);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: var(--padding);
+
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
  /*should be 1200*/
  @media screen 
  and (min-device-width: 800px) 
