@@ -18,6 +18,26 @@ html {
     font-size: 1.6rem;
     color: black;
 }
+
+/*links*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.light-link {
+    color: var(--cream);
+}
+
+.light-link a:visited {
+    color: var(--cream);
+}
+
+.light-link a:hover {
+    opacity: 0.8;
+}
+
 /*Header Section */
 
 header {
@@ -87,10 +107,6 @@ body {
     position: relative;
  }
 
- a {
-    text-decoration: none;
- }
-
  .dropdown-menu {
     position: absolute;
     min-width: 19rem;
@@ -120,9 +136,6 @@ body {
     border: none;
  }
 
- a:focus {
-    color: var(--darkBrown)
- }
 
 .dropdown.active > .link + .dropdown-menu {
     pointer-events: auto;
@@ -242,14 +255,6 @@ button:active {
     align-items: center;
 }
 
-.phone a {
-    color: var(--cream);
-}
-
-.phone a:visited {
-    color: var(--cream);
-}
-
 .extra-small-image {
     height: 2rem;
     width: auto;
@@ -269,10 +274,6 @@ footer p {
     color: var(--cream);
     margin: 0;
     padding: 0;
-}
-
-footer a {
-    color: var(--cream);
 }
 
  /*should be 1200*/
