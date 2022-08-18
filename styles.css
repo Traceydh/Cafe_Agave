@@ -74,6 +74,10 @@ header * {
     position: relative;
  }
 
+ a {
+    text-decoration: none;
+ }
+
  .dropdown-menu {
     position: absolute;
     min-width: 12rem;
@@ -91,7 +95,7 @@ header * {
     transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;;
  }
 
- a {
+ .dropdown-menu a {
     color: black;
     text-decoration: none;
  }
