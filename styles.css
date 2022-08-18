@@ -199,7 +199,7 @@ h2 {
     width: 25rem;
 }
 
-.contact h2, .contact button {
+.contact h2, .contact button, .color p, .color h3 {
     color: var(--cream);
 }
 
@@ -235,6 +235,17 @@ button:active {
     color: var(--cream);
 }
 
+.phone {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra-small-image {
+    height: 2rem;
+    width: auto;
+}
 
 /*Footer*/
 footer {
