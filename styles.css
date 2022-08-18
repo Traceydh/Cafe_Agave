@@ -41,6 +41,10 @@ header * {
     width: auto;
 }
 
+body {
+    background: whitesmoke;
+}
+
  /*Navigation section*/
  nav {  
     position: absolute;
@@ -127,9 +131,14 @@ header * {
 }
 
 /*Menu Section */
+hr {
+    height: 2px;
+    background-color: var(--pinkBrown);
+    border: none;
+    width: 80%;
+}
 .menu {
     width: 100%;
-    background: whitesmoke;
     padding: var(--padding);
 
     display: flex;
