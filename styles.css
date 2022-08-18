@@ -266,6 +266,10 @@ button:active {
     opacity: 80%;
 }
 
+button:hover, a:hover {
+    opacity: 80%;
+}
+
 .map-container p {
     color: var(--cream);
 }
