@@ -26,11 +26,12 @@ const mapImage = document.querySelector("map-image");
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (!entry.isIntersecting) {
+        if (entry.isIntersecting){
+            entry.target.classList.toggle("fade-in");
+            observer.unobserve(entry.target);
+        } else {
             return;
         }
-        entry.target.classList.toggle("fade-in");
-        observer.unobserve(entry.target);
     })
 }, {
     threshold: 0.5
