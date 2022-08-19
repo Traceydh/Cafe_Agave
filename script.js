@@ -26,14 +26,18 @@ const mapImage = document.querySelector("map-image");
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        entry.target.classList.toggle("fade-in", entry.isIntersecting)
-        //entries don't animate away 
-        if (entry.isIntersecting) observer.unobserve(entry.target)
+        if (!entry.isIntersecting) {
+            return;
+        }
+        entry.target.classList.toggle("fade-in");
+        observer.unobserve(entry.target);
     })
 }, {
-    threshold: 0.5, 
+    threshold: 0.5
 })
 
 menus.forEach(menu => {
     observer.observe(menu)
 })
+
+
