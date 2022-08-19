@@ -341,3 +341,14 @@ footer p {
         left: -2rem;
     }
 }
+
+/*Animation*/
+
+.menu {
+    opacity: 0;
+    transition: opacity 600ms ease-in;
+}
+
+.fade-in {
+    opacity: 1;
+}

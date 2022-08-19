@@ -1,3 +1,4 @@
+//drop down bar 
 document.addEventListener('click', e => {
     const isDropdownButton = e.target.matches("[data-dropdown-button]");
 
@@ -16,4 +17,23 @@ document.addEventListener('click', e => {
         dropdown.classList.remove('active')
         button.classList.remove('active');
     })
+})
+
+
+//Menu 
+const menus = document.querySelectorAll(".menu");
+const mapImage = document.querySelector("map-image");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("fade-in", entry.isIntersecting)
+        //entries don't animate away 
+        if (entry.isIntersecting) observer.unobserve(entry.target)
+    })
+}, {
+    threshold: 0.5, 
+})
+
+menus.forEach(menu => {
+    observer.observe(menu)
 })
